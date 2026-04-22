@@ -1,1 +1,7 @@
+# Metadata from STM32CubeIDE
+.metadata/
 
+# Backup data from KiCad
+.history/
+LightControlUnit-backups/
+LightControlUnit.kicad_prl
