@@ -1,0 +1,5 @@
+../Core/Src/app_freertos.c:86:6:MX_FREERTOS_Init	8	static
+../Core/Src/app_freertos.c:134:6:Bsw_1ms	16	static
+../Core/Src/app_freertos.c:152:6:App_1ms	16	static
+../Core/Src/app_freertos.c:170:6:Bsw_10ms	16	static
+../Core/Src/app_freertos.c:188:6:App_10ms	16	static
