@@ -1,5 +1,6 @@
-../Core/Src/app_freertos.c:134:6:Bsw_1ms	1
-../Core/Src/app_freertos.c:188:6:App_10ms	1
-../Core/Src/app_freertos.c:152:6:App_1ms	1
-../Core/Src/app_freertos.c:170:6:Bsw_10ms	1
-../Core/Src/app_freertos.c:86:6:MX_FREERTOS_Init	1
+../Core/Src/app_freertos.c:143:6:Bsw_1ms	1
+../Core/Src/app_freertos.c:197:6:App_10ms	1
+../Core/Src/app_freertos.c:161:6:App_1ms	1
+../Core/Src/app_freertos.c:179:6:Bsw_10ms	1
+../Core/Src/app_freertos.c:82:13:vPortSuppressTicksAndSleep	1
+../Core/Src/app_freertos.c:95:6:MX_FREERTOS_Init	1

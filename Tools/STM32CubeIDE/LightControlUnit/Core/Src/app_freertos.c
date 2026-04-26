@@ -48,14 +48,14 @@
 osThreadId_t Task_Bsw_1msHandle;
 const osThreadAttr_t Task_Bsw_1ms_attributes = {
   .name = "Task_Bsw_1ms",
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityHigh,
   .stack_size = 128 * 4
 };
 /* Definitions for Task_App_1ms */
 osThreadId_t Task_App_1msHandle;
 const osThreadAttr_t Task_App_1ms_attributes = {
   .name = "Task_App_1ms",
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityAboveNormal,
   .stack_size = 128 * 4
 };
 /* Definitions for Task_Bsw_10ms */
@@ -69,7 +69,7 @@ const osThreadAttr_t Task_Bsw_10ms_attributes = {
 osThreadId_t Task_App_10msHandle;
 const osThreadAttr_t Task_App_10ms_attributes = {
   .name = "Task_App_10ms",
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityLow,
   .stack_size = 128 * 4
 };
 
@@ -77,6 +77,15 @@ const osThreadAttr_t Task_App_10ms_attributes = {
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
+
+/* USER CODE BEGIN VPORT_SUPPORT_TICKS_AND_SLEEP */
+__weak void vPortSuppressTicksAndSleep( TickType_t xExpectedIdleTime )
+{
+  // Generated when configUSE_TICKLESS_IDLE == 2.
+  // Function called in tasks.c (in portTASK_FUNCTION).
+  // TO BE COMPLETED or TO BE REPLACED by a user one, overriding that weak one.
+}
+/* USER CODE END VPORT_SUPPORT_TICKS_AND_SLEEP */
 
 /**
   * @brief  FreeRTOS initialization

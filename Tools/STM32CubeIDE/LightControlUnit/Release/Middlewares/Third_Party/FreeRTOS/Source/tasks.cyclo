@@ -1,8 +1,8 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:1026:13:prvAddNewTaskToReadyList	9
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:5297:13:prvAddCurrentTaskToDelayedList	5
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2113:23:prvGetExpectedIdleTime	4
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3999:13:prvResetNextTaskUnblockTime	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3946:17:prvDeleteTCB	4
-../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3427:8:prvIdleTask	3
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:816:13:prvInitialiseNewTask.constprop	6
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:564:18:xTaskCreateStatic	4
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:721:16:xTaskCreate	3
@@ -20,10 +20,12 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2301:12:xTaskGetTickCountFromISR	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2332:13:uxTaskGetNumberOfTasks	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2340:8:pcTaskGetName	3
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2581:10:vTaskStepTick	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2720:12:xTaskIncrementTick	11
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2174:12:xTaskResumeAll	14
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:1214:16:xTaskDelayUntil	10
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:1301:10:vTaskDelay	4
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3427:8:prvIdleTask	6
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2616:12:xTaskCatchUpTicks	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3009:6:vTaskSwitchContext	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:1673:10:vTaskSuspend	9
@@ -38,6 +40,7 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3371:6:vTaskMissedYield	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3379:17:uxTaskGetTaskNumber	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3402:10:vTaskSetTaskNumber	2
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3546:22:eTaskConfirmSleepModeStatus	4
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3719:10:vTaskGetInfo	8
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3822:24:prvListTasksWithinSingleList	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2489:17:uxTaskGetSystemState	4

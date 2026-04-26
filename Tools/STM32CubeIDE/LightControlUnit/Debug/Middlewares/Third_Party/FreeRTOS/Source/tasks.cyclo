@@ -16,12 +16,14 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:1954:6:vTaskStartScheduler	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2079:6:vTaskEndScheduler	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2090:6:vTaskSuspendAll	1
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2113:23:prvGetExpectedIdleTime	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2174:12:xTaskResumeAll	14
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2286:12:xTaskGetTickCount	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2301:12:xTaskGetTickCountFromISR	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2332:13:uxTaskGetNumberOfTasks	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2340:8:pcTaskGetName	3
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2489:17:uxTaskGetSystemState	4
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2581:10:vTaskStepTick	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2616:12:xTaskCatchUpTicks	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2720:12:xTaskIncrementTick	14
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3009:6:vTaskSwitchContext	5
@@ -36,7 +38,8 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3371:6:vTaskMissedYield	1
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3379:17:uxTaskGetTaskNumber	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3402:10:vTaskSetTaskNumber	2
-../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3427:8:prvIdleTask	2
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3427:8:prvIdleTask	5
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3546:22:eTaskConfirmSleepModeStatus	5
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3657:13:prvInitialiseTaskLists	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3689:13:prvCheckTasksWaitingTermination	2
 ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3719:10:vTaskGetInfo	7
