@@ -146,7 +146,7 @@ void Bsw_1ms(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    osDelayUntil(1);
   }
   /* USER CODE END Task_Bsw_1ms */
 }
@@ -164,7 +164,7 @@ void App_1ms(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    osDelayUntil(1);
   }
   /* USER CODE END Task_App_1ms */
 }
@@ -182,7 +182,7 @@ void Bsw_10ms(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+	osDelayUntil(10);
   }
   /* USER CODE END Task_Bsw_10ms */
 }
@@ -200,7 +200,7 @@ void App_10ms(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+	osDelayUntil(10);
   }
   /* USER CODE END Task_App_10ms */
 }

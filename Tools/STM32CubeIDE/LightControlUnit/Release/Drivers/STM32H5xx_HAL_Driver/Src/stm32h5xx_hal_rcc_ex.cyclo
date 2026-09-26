@@ -6,7 +6,7 @@
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:2833:6:HAL_RCCEx_GetPLL1ClockFreq	11
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:2970:6:HAL_RCCEx_GetPLL2ClockFreq	11
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:3104:6:HAL_RCCEx_GetPLL3ClockFreq	11
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:3280:10:HAL_RCCEx_GetPeriphCLKFreq	240
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:3280:10:HAL_RCCEx_GetPeriphCLKFreq	238
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5369:19:HAL_RCCEx_EnablePLL2	6
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5457:19:HAL_RCCEx_DisablePLL2	3
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5493:19:HAL_RCCEx_EnablePLL3	6
@@ -22,7 +22,7 @@
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5820:6:HAL_RCCEx_CRSConfig	1
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5862:6:HAL_RCCEx_CRSSoftwareSynchronizationGenerate	1
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5872:6:HAL_RCCEx_CRSGetSynchronizationInfo	1
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5905:10:HAL_RCCEx_CRSWaitSynchronization	10
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:5905:10:HAL_RCCEx_CRSWaitSynchronization	9
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:6053:13:HAL_RCCEx_CRS_SyncOkCallback	1
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:6064:13:HAL_RCCEx_CRS_SyncWarnCallback	1
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c:6075:13:HAL_RCCEx_CRS_ExpectedSyncCallback	1

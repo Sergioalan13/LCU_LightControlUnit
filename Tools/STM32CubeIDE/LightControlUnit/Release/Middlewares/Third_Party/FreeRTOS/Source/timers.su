@@ -1,9 +1,9 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:716:23:prvInsertTimerInActiveList	8	static
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:522:17:prvReloadTimer	16	static
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:541:17:prvProcessExpiredTimer	16	static
-../Middlewares/Third_Party/FreeRTOS/Source/timers.c:693:23:prvSampleTimeNow	24	static
-../Middlewares/Third_Party/FreeRTOS/Source/timers.c:568:12:prvTimerTask	48	static
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c:908:17:prvSwitchTimerLists	8	static
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:933:17:prvCheckForValidListAndQueue	32	static
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c:568:12:prvTimerTask	48	static
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:233:16:xTimerCreateTimerTask	40	static
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:288:23:xTimerCreate	24	static
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:315:23:xTimerCreateStatic	32	static

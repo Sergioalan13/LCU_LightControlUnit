@@ -1,9 +1,9 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1338:15:prvBytesInBuffer	2
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1248:15:prvWriteBytesToBuffer.part.0	5
-../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:824:15:prvWriteMessageToBuffer	4
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1294:15:prvReadBytesFromBuffer.part.0	4
-../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1075:15:prvReadMessageFromBuffer	3
-../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1359:13:prvInitialiseNewStreamBuffer.constprop	2
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1359:13:prvInitialiseNewStreamBuffer.isra	2
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1075:15:prvReadMessageFromBuffer	4
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:824:15:prvWriteMessageToBuffer	4
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:321:26:xStreamBufferGenericCreate	7
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:398:26:xStreamBufferGenericCreateStatic	6
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:477:6:vStreamBufferDelete	3
@@ -12,7 +12,7 @@
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:597:8:xStreamBufferSpacesAvailable	4
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:630:8:xStreamBufferBytesAvailable	2
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:642:8:xStreamBufferSend	14
-../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:773:8:xStreamBufferSendFromISR	7
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:773:8:xStreamBufferSendFromISR	6
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:874:8:xStreamBufferReceive	9
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:978:8:xStreamBufferNextMessageLengthBytes	5
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:1018:8:xStreamBufferReceiveFromISR	6

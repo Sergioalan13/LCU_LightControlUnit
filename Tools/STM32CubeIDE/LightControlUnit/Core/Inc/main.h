@@ -57,6 +57,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define NINT_Pin GPIO_PIN_0
+#define NINT_GPIO_Port GPIOA
+#define BATT_MEASUREMENT_Pin GPIO_PIN_1
+#define BATT_MEASUREMENT_GPIO_Port GPIOA
+#define EEPROM_WP_Pin GPIO_PIN_5
+#define EEPROM_WP_GPIO_Port GPIOC
+#define DIAGN_Pin GPIO_PIN_8
+#define DIAGN_GPIO_Port GPIOA
 #define SWDIO_Pin GPIO_PIN_13
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14
