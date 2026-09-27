@@ -76,7 +76,7 @@
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:6942:23:HAL_TIM_GetActiveChannel	1
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:6960:29:HAL_TIM_GetChannelState	7
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:6977:30:HAL_TIM_DMABurstState	1
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:7266:6:TIM_Base_SetConfig	24
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:7266:6:TIM_Base_SetConfig	23
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:281:19:HAL_TIM_Base_Init	3
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:665:19:HAL_TIM_OC_Init	3
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c:1334:19:HAL_TIM_PWM_Init	3

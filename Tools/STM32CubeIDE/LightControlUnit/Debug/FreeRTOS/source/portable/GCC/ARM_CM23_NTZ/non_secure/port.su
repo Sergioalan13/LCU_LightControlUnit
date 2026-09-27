@@ -1,0 +1,12 @@
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:847:32:vPortSetupTimerInterrupt	4	static
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:875:13:prvTaskExitError	16	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1040:6:vPortYield	4	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1053:10:vPortEnterCritical	4	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1064:10:vPortExitCritical	4	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1077:6:SysTick_Handler	16	static
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1108:6:vPortSVCHandler_C	24	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1679:19:pxPortInitialiseStack	24	static
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1776:12:xPortStartScheduler	16	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1902:6:vPortEndScheduler	4	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:2109:12:xPortIsInsideInterrupt	16	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:2193:6:vPortConfigureInterruptPriorities	4	static

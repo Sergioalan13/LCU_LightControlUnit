@@ -31,7 +31,8 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "FreeRTOS.h"
+#include "task.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -63,6 +64,10 @@ void Error_Handler(void);
 #define BATT_MEASUREMENT_GPIO_Port GPIOA
 #define EEPROM_WP_Pin GPIO_PIN_5
 #define EEPROM_WP_GPIO_Port GPIOC
+#define TASK_100ms_Pin GPIO_PIN_10
+#define TASK_100ms_GPIO_Port GPIOB
+#define TASK_1ms_Pin GPIO_PIN_8
+#define TASK_1ms_GPIO_Port GPIOC
 #define DIAGN_Pin GPIO_PIN_8
 #define DIAGN_GPIO_Port GPIOA
 #define SWDIO_Pin GPIO_PIN_13
@@ -71,6 +76,10 @@ void Error_Handler(void);
 #define SWCLK_GPIO_Port GPIOA
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
+#define TASK_50ms_Pin GPIO_PIN_4
+#define TASK_50ms_GPIO_Port GPIOB
+#define TASK_10ms_Pin GPIO_PIN_5
+#define TASK_10ms_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
