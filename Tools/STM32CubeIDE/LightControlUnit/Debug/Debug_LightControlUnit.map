@@ -501,12 +501,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./Core/Src/stm32h5xx_it.o
  .data          0x00000000        0x0 ./Core/Src/stm32h5xx_it.o
  .bss           0x00000000        0x0 ./Core/Src/stm32h5xx_it.o
- .text.SVC_Handler
-                0x00000000        0xe ./Core/Src/stm32h5xx_it.o
- .text.PendSV_Handler
-                0x00000000        0xe ./Core/Src/stm32h5xx_it.o
- .text.SysTick_Handler
-                0x00000000        0xe ./Core/Src/stm32h5xx_it.o
  .debug_macro   0x00000000      0xade ./Core/Src/stm32h5xx_it.o
  .debug_macro   0x00000000      0x1d4 ./Core/Src/stm32h5xx_it.o
  .debug_macro   0x00000000       0x22 ./Core/Src/stm32h5xx_it.o
@@ -7695,65 +7689,65 @@ LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
 LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libm.a
 LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v8-m.main+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x1ef82
+.debug_info     0x00000000    0x1ef49
  .debug_info    0x00000000     0x2abb ./Core/Src/main.o
  .debug_info    0x00002abb     0x1f38 ./Core/Src/stm32h5xx_hal_msp.o
  .debug_info    0x000049f3     0x112a ./Core/Src/stm32h5xx_hal_timebase_tim.o
- .debug_info    0x00005b1d      0x97f ./Core/Src/stm32h5xx_it.o
- .debug_info    0x0000649c      0xce0 ./Core/Src/system_stm32h5xx.o
- .debug_info    0x0000717c       0x30 ./Core/Startup/startup_stm32h533retx.o
- .debug_info    0x000071ac     0x1302 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
- .debug_info    0x000084ae     0x237f ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
- .debug_info    0x0000a82d     0x15df ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
- .debug_info    0x0000be0c     0x1920 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
- .debug_info    0x0000d72c      0x6b6 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
- .debug_info    0x0000dde2     0x2315 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
- .debug_info    0x000100f7      0x8f5 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
- .debug_info    0x000109ec      0x4d6 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
- .debug_info    0x00010ec2      0x928 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
- .debug_info    0x000117ea     0x1009 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
- .debug_info    0x000127f3     0x1204 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
- .debug_info    0x000139f7     0x15c9 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
- .debug_info    0x00014fc0     0x2e71 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
- .debug_info    0x00017e31     0x1eaa ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
- .debug_info    0x00019cdb      0x2aa ./FreeRTOS/source/list.o
- .debug_info    0x00019f85     0x1425 ./FreeRTOS/source/queue.o
- .debug_info    0x0001b3aa     0x211e ./FreeRTOS/source/tasks.o
- .debug_info    0x0001d4c8     0x1178 ./FreeRTOS/source/timers.o
- .debug_info    0x0001e640      0x333 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
- .debug_info    0x0001e973      0x153 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
- .debug_info    0x0001eac6      0x4bc ./FreeRTOS/source/portable/MemMang/heap_4.o
+ .debug_info    0x00005b1d      0x946 ./Core/Src/stm32h5xx_it.o
+ .debug_info    0x00006463      0xce0 ./Core/Src/system_stm32h5xx.o
+ .debug_info    0x00007143       0x30 ./Core/Startup/startup_stm32h533retx.o
+ .debug_info    0x00007173     0x1302 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
+ .debug_info    0x00008475     0x237f ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
+ .debug_info    0x0000a7f4     0x15df ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
+ .debug_info    0x0000bdd3     0x1920 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
+ .debug_info    0x0000d6f3      0x6b6 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
+ .debug_info    0x0000dda9     0x2315 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
+ .debug_info    0x000100be      0x8f5 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
+ .debug_info    0x000109b3      0x4d6 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
+ .debug_info    0x00010e89      0x928 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
+ .debug_info    0x000117b1     0x1009 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
+ .debug_info    0x000127ba     0x1204 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
+ .debug_info    0x000139be     0x15c9 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
+ .debug_info    0x00014f87     0x2e71 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
+ .debug_info    0x00017df8     0x1eaa ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
+ .debug_info    0x00019ca2      0x2aa ./FreeRTOS/source/list.o
+ .debug_info    0x00019f4c     0x1425 ./FreeRTOS/source/queue.o
+ .debug_info    0x0001b371     0x211e ./FreeRTOS/source/tasks.o
+ .debug_info    0x0001d48f     0x1178 ./FreeRTOS/source/timers.o
+ .debug_info    0x0001e607      0x333 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
+ .debug_info    0x0001e93a      0x153 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
+ .debug_info    0x0001ea8d      0x4bc ./FreeRTOS/source/portable/MemMang/heap_4.o
 
-.debug_abbrev   0x00000000     0x3b92
+.debug_abbrev   0x00000000     0x3b93
  .debug_abbrev  0x00000000      0x33e ./Core/Src/main.o
  .debug_abbrev  0x0000033e      0x253 ./Core/Src/stm32h5xx_hal_msp.o
  .debug_abbrev  0x00000591      0x229 ./Core/Src/stm32h5xx_hal_timebase_tim.o
- .debug_abbrev  0x000007ba      0x1ae ./Core/Src/stm32h5xx_it.o
- .debug_abbrev  0x00000968      0x13a ./Core/Src/system_stm32h5xx.o
- .debug_abbrev  0x00000aa2       0x24 ./Core/Startup/startup_stm32h533retx.o
- .debug_abbrev  0x00000ac6      0x2af ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
- .debug_abbrev  0x00000d75      0x2b9 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
- .debug_abbrev  0x0000102e      0x327 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
- .debug_abbrev  0x00001355      0x20b ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
- .debug_abbrev  0x00001560      0x1db ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
- .debug_abbrev  0x0000173b      0x282 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
- .debug_abbrev  0x000019bd      0x1b9 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
- .debug_abbrev  0x00001b76      0x228 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
- .debug_abbrev  0x00001d9e      0x299 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
- .debug_abbrev  0x00002037      0x290 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
- .debug_abbrev  0x000022c7      0x25c ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
- .debug_abbrev  0x00002523      0x2b3 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
- .debug_abbrev  0x000027d6      0x2c4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
- .debug_abbrev  0x00002a9a      0x2c7 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
- .debug_abbrev  0x00002d61       0xee ./FreeRTOS/source/list.o
- .debug_abbrev  0x00002e4f      0x2e5 ./FreeRTOS/source/queue.o
- .debug_abbrev  0x00003134      0x312 ./FreeRTOS/source/tasks.o
- .debug_abbrev  0x00003446      0x30f ./FreeRTOS/source/timers.o
- .debug_abbrev  0x00003755      0x190 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
- .debug_abbrev  0x000038e5       0xb8 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
- .debug_abbrev  0x0000399d      0x1f5 ./FreeRTOS/source/portable/MemMang/heap_4.o
+ .debug_abbrev  0x000007ba      0x1af ./Core/Src/stm32h5xx_it.o
+ .debug_abbrev  0x00000969      0x13a ./Core/Src/system_stm32h5xx.o
+ .debug_abbrev  0x00000aa3       0x24 ./Core/Startup/startup_stm32h533retx.o
+ .debug_abbrev  0x00000ac7      0x2af ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
+ .debug_abbrev  0x00000d76      0x2b9 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
+ .debug_abbrev  0x0000102f      0x327 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
+ .debug_abbrev  0x00001356      0x20b ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
+ .debug_abbrev  0x00001561      0x1db ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
+ .debug_abbrev  0x0000173c      0x282 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
+ .debug_abbrev  0x000019be      0x1b9 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
+ .debug_abbrev  0x00001b77      0x228 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
+ .debug_abbrev  0x00001d9f      0x299 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
+ .debug_abbrev  0x00002038      0x290 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
+ .debug_abbrev  0x000022c8      0x25c ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
+ .debug_abbrev  0x00002524      0x2b3 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
+ .debug_abbrev  0x000027d7      0x2c4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
+ .debug_abbrev  0x00002a9b      0x2c7 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
+ .debug_abbrev  0x00002d62       0xee ./FreeRTOS/source/list.o
+ .debug_abbrev  0x00002e50      0x2e5 ./FreeRTOS/source/queue.o
+ .debug_abbrev  0x00003135      0x312 ./FreeRTOS/source/tasks.o
+ .debug_abbrev  0x00003447      0x30f ./FreeRTOS/source/timers.o
+ .debug_abbrev  0x00003756      0x190 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
+ .debug_abbrev  0x000038e6       0xb8 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
+ .debug_abbrev  0x0000399e      0x1f5 ./FreeRTOS/source/portable/MemMang/heap_4.o
 
-.debug_aranges  0x00000000     0x1e00
+.debug_aranges  0x00000000     0x1de8
  .debug_aranges
                 0x00000000       0x90 ./Core/Src/main.o
  .debug_aranges
@@ -7761,56 +7755,56 @@ LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_aranges
                 0x000000f0       0x30 ./Core/Src/stm32h5xx_hal_timebase_tim.o
  .debug_aranges
-                0x00000120       0x68 ./Core/Src/stm32h5xx_it.o
+                0x00000120       0x50 ./Core/Src/stm32h5xx_it.o
  .debug_aranges
-                0x00000188       0x28 ./Core/Src/system_stm32h5xx.o
+                0x00000170       0x28 ./Core/Src/system_stm32h5xx.o
  .debug_aranges
-                0x000001b0       0x28 ./Core/Startup/startup_stm32h533retx.o
+                0x00000198       0x28 ./Core/Startup/startup_stm32h533retx.o
  .debug_aranges
-                0x000001d8      0x1f8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
+                0x000001c0      0x1f8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
  .debug_aranges
-                0x000003d0      0x258 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
+                0x000003b8      0x258 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
  .debug_aranges
-                0x00000628      0x140 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
+                0x00000610      0x140 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
  .debug_aranges
-                0x00000768      0x208 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
+                0x00000750      0x208 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
  .debug_aranges
-                0x00000970       0x78 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
+                0x00000958       0x78 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
  .debug_aranges
-                0x000009e8      0x2a0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
+                0x000009d0      0x2a0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
  .debug_aranges
-                0x00000c88       0x40 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
+                0x00000c70       0x40 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
  .debug_aranges
-                0x00000cc8       0xa8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
+                0x00000cb0       0xa8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
  .debug_aranges
-                0x00000d70      0x148 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
+                0x00000d58      0x148 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
  .debug_aranges
-                0x00000eb8       0xa0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
+                0x00000ea0       0xa0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
  .debug_aranges
-                0x00000f58      0x108 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
+                0x00000f40      0x108 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
  .debug_aranges
-                0x00001060      0x1a8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
+                0x00001048      0x1a8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
  .debug_aranges
-                0x00001208      0x3e8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
+                0x000011f0      0x3e8 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
  .debug_aranges
-                0x000015f0      0x240 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
+                0x000015d8      0x240 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
  .debug_aranges
-                0x00001830       0x40 ./FreeRTOS/source/list.o
+                0x00001818       0x40 ./FreeRTOS/source/list.o
  .debug_aranges
-                0x00001870      0x130 ./FreeRTOS/source/queue.o
+                0x00001858      0x130 ./FreeRTOS/source/queue.o
  .debug_aranges
-                0x000019a0      0x220 ./FreeRTOS/source/tasks.o
+                0x00001988      0x220 ./FreeRTOS/source/tasks.o
  .debug_aranges
-                0x00001bc0       0xf8 ./FreeRTOS/source/timers.o
+                0x00001ba8       0xf8 ./FreeRTOS/source/timers.o
  .debug_aranges
-                0x00001cb8       0x78 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
+                0x00001ca0       0x78 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
  .debug_aranges
-                0x00001d30       0x60 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
+                0x00001d18       0x60 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
  .debug_aranges
-                0x00001d90       0x70 ./FreeRTOS/source/portable/MemMang/heap_4.o
+                0x00001d78       0x70 ./FreeRTOS/source/portable/MemMang/heap_4.o
 
 .debug_rnglists
-                0x00000000     0x1732
+                0x00000000     0x1720
  .debug_rnglists
                 0x00000000       0x6e ./Core/Src/main.o
  .debug_rnglists
@@ -7818,53 +7812,53 @@ LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_rnglists
                 0x000000b5       0x20 ./Core/Src/stm32h5xx_hal_timebase_tim.o
  .debug_rnglists
-                0x000000d5       0x49 ./Core/Src/stm32h5xx_it.o
+                0x000000d5       0x37 ./Core/Src/stm32h5xx_it.o
  .debug_rnglists
-                0x0000011e       0x1b ./Core/Src/system_stm32h5xx.o
+                0x0000010c       0x1b ./Core/Src/system_stm32h5xx.o
  .debug_rnglists
-                0x00000139       0x19 ./Core/Startup/startup_stm32h533retx.o
+                0x00000127       0x19 ./Core/Startup/startup_stm32h533retx.o
  .debug_rnglists
-                0x00000152      0x177 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
+                0x00000140      0x177 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
  .debug_rnglists
-                0x000002c9      0x1cc ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
+                0x000002b7      0x1cc ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
  .debug_rnglists
-                0x00000495       0xec ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
+                0x00000483       0xec ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
  .debug_rnglists
-                0x00000581      0x18d ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
+                0x0000056f      0x18d ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
  .debug_rnglists
-                0x0000070e       0x57 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
+                0x000006fc       0x57 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
  .debug_rnglists
-                0x00000765      0x228 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
+                0x00000753      0x228 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
  .debug_rnglists
-                0x0000098d       0x30 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
+                0x0000097b       0x30 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
  .debug_rnglists
-                0x000009bd       0x7a ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
+                0x000009ab       0x7a ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
  .debug_rnglists
-                0x00000a37       0xf3 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
+                0x00000a25       0xf3 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
  .debug_rnglists
-                0x00000b2a       0x79 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
+                0x00000b18       0x79 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
  .debug_rnglists
-                0x00000ba3       0xcf ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
+                0x00000b91       0xcf ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
  .debug_rnglists
-                0x00000c72      0x148 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
+                0x00000c60      0x148 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
  .debug_rnglists
-                0x00000dba      0x32e ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
+                0x00000da8      0x32e ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
  .debug_rnglists
-                0x000010e8      0x1cb ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
+                0x000010d6      0x1cb ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
  .debug_rnglists
-                0x000012b3       0x2b ./FreeRTOS/source/list.o
+                0x000012a1       0x2b ./FreeRTOS/source/list.o
  .debug_rnglists
-                0x000012de       0xec ./FreeRTOS/source/queue.o
+                0x000012cc       0xec ./FreeRTOS/source/queue.o
  .debug_rnglists
-                0x000013ca      0x1c1 ./FreeRTOS/source/tasks.o
+                0x000013b8      0x1c1 ./FreeRTOS/source/tasks.o
  .debug_rnglists
-                0x0000158b       0xba ./FreeRTOS/source/timers.o
+                0x00001579       0xba ./FreeRTOS/source/timers.o
  .debug_rnglists
-                0x00001645       0x56 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
+                0x00001633       0x56 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
  .debug_rnglists
-                0x0000169b       0x43 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
+                0x00001689       0x43 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
  .debug_rnglists
-                0x000016de       0x54 ./FreeRTOS/source/portable/MemMang/heap_4.o
+                0x000016cc       0x54 ./FreeRTOS/source/portable/MemMang/heap_4.o
 
 .debug_macro    0x00000000    0x31429
  .debug_macro   0x00000000      0x358 ./Core/Src/main.o
@@ -7974,41 +7968,41 @@ LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x000310f2       0xf8 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
  .debug_macro   0x000311ea      0x23f ./FreeRTOS/source/portable/MemMang/heap_4.o
 
-.debug_line     0x00000000    0x2330d
+.debug_line     0x00000000    0x232d4
  .debug_line    0x00000000      0xe8c ./Core/Src/main.o
  .debug_line    0x00000e8c      0xcad ./Core/Src/stm32h5xx_hal_msp.o
  .debug_line    0x00001b39      0x99f ./Core/Src/stm32h5xx_hal_timebase_tim.o
- .debug_line    0x000024d8      0xbb3 ./Core/Src/stm32h5xx_it.o
- .debug_line    0x0000308b      0xaac ./Core/Src/system_stm32h5xx.o
- .debug_line    0x00003b37       0x7b ./Core/Startup/startup_stm32h533retx.o
- .debug_line    0x00003bb2     0x1034 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
- .debug_line    0x00004be6     0x2277 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
- .debug_line    0x00006e5d      0xf7b ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
- .debug_line    0x00007dd8     0x1aab ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
- .debug_line    0x00009883      0xd35 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
- .debug_line    0x0000a5b8     0x3c19 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
- .debug_line    0x0000e1d1      0xab5 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
- .debug_line    0x0000ec86      0xc1b ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
- .debug_line    0x0000f8a1      0xe56 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
- .debug_line    0x000106f7     0x14c4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
- .debug_line    0x00011bbb     0x24e1 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
- .debug_line    0x0001409c     0x25f1 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
- .debug_line    0x0001668d     0x4583 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
- .debug_line    0x0001ac10     0x22e5 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
- .debug_line    0x0001cef5      0x844 ./FreeRTOS/source/list.o
- .debug_line    0x0001d739     0x153b ./FreeRTOS/source/queue.o
- .debug_line    0x0001ec74     0x1d99 ./FreeRTOS/source/tasks.o
- .debug_line    0x00020a0d      0xde4 ./FreeRTOS/source/timers.o
- .debug_line    0x000217f1      0x899 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
- .debug_line    0x0002208a      0x6f5 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
- .debug_line    0x0002277f      0xb8e ./FreeRTOS/source/portable/MemMang/heap_4.o
+ .debug_line    0x000024d8      0xb7a ./Core/Src/stm32h5xx_it.o
+ .debug_line    0x00003052      0xaac ./Core/Src/system_stm32h5xx.o
+ .debug_line    0x00003afe       0x7b ./Core/Startup/startup_stm32h533retx.o
+ .debug_line    0x00003b79     0x1034 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
+ .debug_line    0x00004bad     0x2277 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
+ .debug_line    0x00006e24      0xf7b ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
+ .debug_line    0x00007d9f     0x1aab ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
+ .debug_line    0x0000984a      0xd35 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
+ .debug_line    0x0000a57f     0x3c19 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
+ .debug_line    0x0000e198      0xab5 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
+ .debug_line    0x0000ec4d      0xc1b ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
+ .debug_line    0x0000f868      0xe56 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
+ .debug_line    0x000106be     0x14c4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
+ .debug_line    0x00011b82     0x24e1 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
+ .debug_line    0x00014063     0x25f1 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
+ .debug_line    0x00016654     0x4583 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
+ .debug_line    0x0001abd7     0x22e5 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
+ .debug_line    0x0001cebc      0x844 ./FreeRTOS/source/list.o
+ .debug_line    0x0001d700     0x153b ./FreeRTOS/source/queue.o
+ .debug_line    0x0001ec3b     0x1d99 ./FreeRTOS/source/tasks.o
+ .debug_line    0x000209d4      0xde4 ./FreeRTOS/source/timers.o
+ .debug_line    0x000217b8      0x899 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
+ .debug_line    0x00022051      0x6f5 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
+ .debug_line    0x00022746      0xb8e ./FreeRTOS/source/portable/MemMang/heap_4.o
 
 .debug_str      0x00000000   0x143907
  .debug_str     0x00000000   0x143907 ./Core/Src/main.o
                              0x135b77 (size before relaxing)
  .debug_str     0x00143907   0x1354ab ./Core/Src/stm32h5xx_hal_msp.o
  .debug_str     0x00143907   0x129f14 ./Core/Src/stm32h5xx_hal_timebase_tim.o
- .debug_str     0x00143907   0x13469f ./Core/Src/stm32h5xx_it.o
+ .debug_str     0x00143907   0x134674 ./Core/Src/stm32h5xx_it.o
  .debug_str     0x00143907   0x129449 ./Core/Src/system_stm32h5xx.o
  .debug_str     0x00143907       0x8f ./Core/Startup/startup_stm32h533retx.o
  .debug_str     0x00143907   0x12a1fb ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
@@ -8062,36 +8056,36 @@ LOAD C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .comment       0x00000043       0x44 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
  .comment       0x00000043       0x44 ./FreeRTOS/source/portable/MemMang/heap_4.o
 
-.debug_frame    0x00000000     0x79bc
+.debug_frame    0x00000000     0x7968
  .debug_frame   0x00000000      0x1e8 ./Core/Src/main.o
  .debug_frame   0x000001e8      0x15c ./Core/Src/stm32h5xx_hal_msp.o
  .debug_frame   0x00000344       0x6c ./Core/Src/stm32h5xx_hal_timebase_tim.o
- .debug_frame   0x000003b0      0x114 ./Core/Src/stm32h5xx_it.o
- .debug_frame   0x000004c4       0x58 ./Core/Src/system_stm32h5xx.o
- .debug_frame   0x0000051c      0x728 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
- .debug_frame   0x00000c44      0xa4c ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
- .debug_frame   0x00001690      0x508 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
- .debug_frame   0x00001b98      0x8d0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
- .debug_frame   0x00002468      0x1c0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
- .debug_frame   0x00002628      0xbf4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
- .debug_frame   0x0000321c       0xc4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
- .debug_frame   0x000032e0      0x260 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
- .debug_frame   0x00003540      0x480 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
- .debug_frame   0x000039c0      0x248 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
- .debug_frame   0x00003c08      0x434 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
- .debug_frame   0x0000403c      0x73c ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
- .debug_frame   0x00004778     0x1180 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
- .debug_frame   0x000058f8      0x9d4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
- .debug_frame   0x000062cc       0xc4 ./FreeRTOS/source/list.o
- .debug_frame   0x00006390      0x50c ./FreeRTOS/source/queue.o
- .debug_frame   0x0000689c      0x91c ./FreeRTOS/source/tasks.o
- .debug_frame   0x000071b8      0x3ec ./FreeRTOS/source/timers.o
- .debug_frame   0x000075a4      0x190 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
- .debug_frame   0x00007734       0xa0 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
- .debug_frame   0x000077d4      0x174 ./FreeRTOS/source/portable/MemMang/heap_4.o
- .debug_frame   0x00007948       0x20 C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-memset.o)
- .debug_frame   0x00007968       0x2c C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-init.o)
- .debug_frame   0x00007994       0x28 C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x000003b0       0xc0 ./Core/Src/stm32h5xx_it.o
+ .debug_frame   0x00000470       0x58 ./Core/Src/system_stm32h5xx.o
+ .debug_frame   0x000004c8      0x728 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.o
+ .debug_frame   0x00000bf0      0xa4c ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.o
+ .debug_frame   0x0000163c      0x508 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.o
+ .debug_frame   0x00001b44      0x8d0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.o
+ .debug_frame   0x00002414      0x1c0 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.o
+ .debug_frame   0x000025d4      0xbf4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c.o
+ .debug_frame   0x000031c8       0xc4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_i2c_ex.o
+ .debug_frame   0x0000328c      0x260 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.o
+ .debug_frame   0x000034ec      0x480 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.o
+ .debug_frame   0x0000396c      0x248 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.o
+ .debug_frame   0x00003bb4      0x434 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.o
+ .debug_frame   0x00003fe8      0x73c ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.o
+ .debug_frame   0x00004724     0x1180 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.o
+ .debug_frame   0x000058a4      0x9d4 ./Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.o
+ .debug_frame   0x00006278       0xc4 ./FreeRTOS/source/list.o
+ .debug_frame   0x0000633c      0x50c ./FreeRTOS/source/queue.o
+ .debug_frame   0x00006848      0x91c ./FreeRTOS/source/tasks.o
+ .debug_frame   0x00007164      0x3ec ./FreeRTOS/source/timers.o
+ .debug_frame   0x00007550      0x190 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.o
+ .debug_frame   0x000076e0       0xa0 ./FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.o
+ .debug_frame   0x00007780      0x174 ./FreeRTOS/source/portable/MemMang/heap_4.o
+ .debug_frame   0x000078f4       0x20 C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x00007914       0x2c C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-init.o)
+ .debug_frame   0x00007940       0x28 C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
 
 .debug_line_str
                 0x00000000       0x73

@@ -79,12 +79,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./Core/Src/stm32h5xx_it.o
  .data          0x00000000        0x0 ./Core/Src/stm32h5xx_it.o
  .bss           0x00000000        0x0 ./Core/Src/stm32h5xx_it.o
- .text.SVC_Handler
-                0x00000000        0x2 ./Core/Src/stm32h5xx_it.o
- .text.PendSV_Handler
-                0x00000000        0x2 ./Core/Src/stm32h5xx_it.o
- .text.SysTick_Handler
-                0x00000000        0x2 ./Core/Src/stm32h5xx_it.o
  .text          0x00000000        0x0 ./Core/Src/syscalls.o
  .data          0x00000000        0x0 ./Core/Src/syscalls.o
  .bss           0x00000000        0x0 ./Core/Src/syscalls.o
