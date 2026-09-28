@@ -1,0 +1,9 @@
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:145:10:vRestoreContextOfFirstTask	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:171:12:xIsPrivileged	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:191:6:vRaisePrivilege	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:207:6:vResetPrivilege	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:223:6:vStartFirstTask	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:243:10:ulSetInterruptMask	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:257:6:vClearInterruptMask	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:399:10:PendSV_Handler	1
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/portasm.c:495:10:SVC_Handler	1

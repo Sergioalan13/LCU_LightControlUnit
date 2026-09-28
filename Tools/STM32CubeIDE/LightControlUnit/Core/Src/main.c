@@ -18,7 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "cmsis_os2.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -50,12 +49,14 @@ I2C_HandleTypeDef hi2c1;
 SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
-
+uint32_t Task_1ms_Counter = 0;
+uint32_t Task_10ms_Counter = 0;
+uint32_t Task_50ms_Counter = 0;
+uint32_t Task_100ms_Counter = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-void MX_FREERTOS_Init(void);
 static void MX_GPIO_Init(void);
 static void MX_ICACHE_Init(void);
 static void MX_ADC1_Init(void);
@@ -63,7 +64,12 @@ static void MX_FDCAN2_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
+static void FreeRTOS_CreateTasks(void);
 
+void Task_1ms(void * pvParameters);
+void Task_10ms(void * pvParameters);
+void Task_50ms(void * pvParameters);
+void Task_100ms(void * pvParameters);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -109,19 +115,11 @@ int main(void)
 
   /* USER CODE END 2 */
 
-  /* Init scheduler */
-  osKernelInitialize();
-
-  /* Call init function for freertos objects (in cmsis_os2.c) */
-  MX_FREERTOS_Init();
-
-  /* Start scheduler */
-  osKernelStart();
-
-  /* We should never get here as control is now taken by the scheduler */
-
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  FreeRTOS_CreateTasks();
+
+  vTaskStartScheduler();
   while (1)
   {
     /* USER CODE END WHILE */
@@ -440,8 +438,8 @@ static void MX_SPI1_Init(void)
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-/* USER CODE BEGIN MX_GPIO_Init_1 */
-/* USER CODE END MX_GPIO_Init_1 */
+  /* USER CODE BEGIN MX_GPIO_Init_1 */
+  /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
@@ -450,14 +448,24 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, EEPROM_WP_Pin|TASK_1ms_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : EEPROM_WP_Pin */
-  GPIO_InitStruct.Pin = EEPROM_WP_Pin;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, TASK_100ms_Pin|TASK_50ms_Pin|TASK_10ms_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : EEPROM_WP_Pin TASK_1ms_Pin */
+  GPIO_InitStruct.Pin = EEPROM_WP_Pin|TASK_1ms_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(EEPROM_WP_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : TASK_100ms_Pin TASK_50ms_Pin TASK_10ms_Pin */
+  GPIO_InitStruct.Pin = TASK_100ms_Pin|TASK_50ms_Pin|TASK_10ms_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pin : DIAGN_Pin */
   GPIO_InitStruct.Pin = DIAGN_Pin;
@@ -465,11 +473,75 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(DIAGN_GPIO_Port, &GPIO_InitStruct);
 
-/* USER CODE BEGIN MX_GPIO_Init_2 */
-/* USER CODE END MX_GPIO_Init_2 */
+  /* USER CODE BEGIN MX_GPIO_Init_2 */
+  /* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
+static void FreeRTOS_CreateTasks(void)
+{
+	xTaskCreate(Task_1ms, "Task_1ms", 256, NULL, 1, NULL);
+	xTaskCreate(Task_10ms, "Task_10ms", 256, NULL, 1, NULL);
+	xTaskCreate(Task_50ms, "Task_50ms", 256, NULL, 1, NULL);
+	xTaskCreate(Task_100ms, "Task_100ms", 256, NULL, 1, NULL);
+}
+
+void Task_1ms(void * pvParameters)
+{
+	TickType_t lastWakeTime = xTaskGetTickCount();
+
+	while(1)
+	{
+		HAL_GPIO_WritePin(GPIOC, TASK_1ms_Pin, GPIO_PIN_SET);
+		/* Runnable*/
+		Task_1ms_Counter++;
+		vTaskDelayUntil(&lastWakeTime, pdMS_TO_TICKS(1));
+		HAL_GPIO_WritePin(GPIOC, TASK_1ms_Pin, GPIO_PIN_RESET);
+	}
+}
+
+void Task_10ms(void * pvParameters)
+{
+	TickType_t lastWakeTime = xTaskGetTickCount();
+
+	while(1)
+	{
+		HAL_GPIO_WritePin(GPIOB, TASK_10ms_Pin, GPIO_PIN_SET);
+		/* Runnable*/
+		Task_10ms_Counter++;
+		vTaskDelayUntil(&lastWakeTime, pdMS_TO_TICKS(10));
+		HAL_GPIO_WritePin(GPIOB, TASK_10ms_Pin, GPIO_PIN_RESET);
+	}
+}
+
+void Task_50ms(void * pvParameters)
+{
+	TickType_t lastWakeTime = xTaskGetTickCount();
+
+	while(1)
+	{
+		HAL_GPIO_WritePin(GPIOB, TASK_50ms_Pin, GPIO_PIN_SET);
+		/* Runnable*/
+		Task_50ms_Counter++;
+		vTaskDelayUntil(&lastWakeTime, pdMS_TO_TICKS(50));
+		HAL_GPIO_WritePin(GPIOB, TASK_50ms_Pin, GPIO_PIN_RESET);
+	}
+}
+
+void Task_100ms(void * pvParameters)
+{
+	TickType_t lastWakeTime = xTaskGetTickCount();
+
+	while(1)
+	{
+		HAL_GPIO_WritePin(GPIOB, TASK_100ms_Pin, GPIO_PIN_SET);
+		/* Runnable*/
+		Task_100ms_Counter++;
+
+		vTaskDelayUntil(&lastWakeTime, pdMS_TO_TICKS(100));
+		HAL_GPIO_WritePin(GPIOB, TASK_100ms_Pin, GPIO_PIN_RESET);
+	}
+}
 
 /* USER CODE END 4 */
 
@@ -486,7 +558,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   /* USER CODE BEGIN Callback 0 */
 
   /* USER CODE END Callback 0 */
-  if (htim->Instance == TIM2) {
+  if (htim->Instance == TIM2)
+  {
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
@@ -496,6 +569,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 /**
   * @brief  This function is executed in case of error occurrence.
+  * @param None
   * @retval None
   */
 void Error_Handler(void)
@@ -508,8 +582,7 @@ void Error_Handler(void)
   }
   /* USER CODE END Error_Handler_Debug */
 }
-
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.

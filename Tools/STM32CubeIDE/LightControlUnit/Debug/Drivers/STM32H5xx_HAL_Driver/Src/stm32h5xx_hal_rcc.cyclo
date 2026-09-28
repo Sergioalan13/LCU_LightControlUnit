@@ -13,5 +13,5 @@
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1685:6:HAL_RCC_EnableCSS	1
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1695:6:HAL_RCC_NMI_IRQHandler	2
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1712:13:HAL_RCC_CSSCallback	1
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1754:6:HAL_RCC_ConfigAttributes	3
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1834:19:HAL_RCC_GetConfigAttributes	3
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1761:6:HAL_RCC_ConfigAttributes	3
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c:1841:19:HAL_RCC_GetConfigAttributes	3

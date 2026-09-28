@@ -1,6 +1,0 @@
-../Core/Src/app_freertos.c:143:6:Bsw_1ms	8	static
-../Core/Src/app_freertos.c:179:6:Bsw_10ms	8	static
-../Core/Src/app_freertos.c:161:6:App_1ms	8	static
-../Core/Src/app_freertos.c:197:6:App_10ms	8	static
-../Core/Src/app_freertos.c:82:13:vPortSuppressTicksAndSleep	0	static
-../Core/Src/app_freertos.c:95:6:MX_FREERTOS_Init	8	static
