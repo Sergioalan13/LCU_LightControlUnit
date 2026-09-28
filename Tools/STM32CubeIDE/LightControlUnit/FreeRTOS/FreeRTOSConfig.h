@@ -46,14 +46,14 @@
 /******************************************************************************/
 /* Hardware description related definitions. **********************************/
 /******************************************************************************/
-
+extern uint32_t SystemCoreClock;
 /* In most cases, configCPU_CLOCK_HZ must be set to the frequency of the clock
  * that drives the peripheral used to generate the kernels periodic tick
  * interrupt. The default value is set to 20MHz and matches the QEMU demo
  * settings.  Your application will certainly need a different value so set this
  * correctly. This is very often, but not always, equal to the main system clock
  * frequency. */
-#define configCPU_CLOCK_HZ    ( ( unsigned long ) 160000000 )
+#define configCPU_CLOCK_HZ    ( SystemCoreClock )
 
 /* configSYSTICK_CLOCK_HZ is an optional parameter for ARM Cortex-M ports only.
  *
@@ -104,7 +104,7 @@
  * support tickless mode. See
  * https://www.freertos.org/low-power-tickless-rtos.html Defaults to 0 if left
  * undefined. */
-#define configUSE_TICKLESS_IDLE                    0
+#define configUSE_TICKLESS_IDLE                    1
 
 /* configMAX_PRIORITIES Sets the number of available task priorities.  Tasks can
  * be assigned priorities of 0 to (configMAX_PRIORITIES - 1).  Zero is the
@@ -425,13 +425,6 @@
         ;                         \
     }
 /* *INDENT-ON* */
-
-/******************************************************************************/
-/* Handlers. ******************************************************************/
-/******************************************************************************/
-#define vPortSVCHandler SVC_Handler
-#define xPortPendSVHandler PendSV_Handler
-#define xPortSysTickHandler SysTick_Handler
 
 /******************************************************************************/
 /* FreeRTOS MPU specific definitions. *****************************************/

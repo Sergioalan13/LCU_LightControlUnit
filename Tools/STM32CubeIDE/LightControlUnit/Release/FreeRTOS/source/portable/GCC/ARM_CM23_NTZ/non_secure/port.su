@@ -1,4 +1,5 @@
 ../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:875:13:prvTaskExitError	8	static,ignoring_inline_asm
+../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:628:36:vPortSuppressTicksAndSleep	24	static,ignoring_inline_asm
 ../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:847:32:vPortSetupTimerInterrupt	0	static
 ../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1040:6:vPortYield	0	static,ignoring_inline_asm
 ../FreeRTOS/source/portable/GCC/ARM_CM23_NTZ/non_secure/port.c:1053:10:vPortEnterCritical	0	static,ignoring_inline_asm

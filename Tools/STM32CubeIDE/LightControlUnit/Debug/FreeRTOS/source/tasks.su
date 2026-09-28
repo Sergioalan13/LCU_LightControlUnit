@@ -21,12 +21,14 @@
 ../FreeRTOS/source/tasks.c:3742:6:vTaskStartScheduler	16	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:3847:6:vTaskEndScheduler	16	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:3890:6:vTaskSuspendAll	4	static,ignoring_inline_asm
+../FreeRTOS/source/tasks.c:4002:23:prvGetExpectedIdleTime	16	static
 ../FreeRTOS/source/tasks.c:4064:12:xTaskResumeAll	40	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:4213:12:xTaskGetTickCount	16	static
 ../FreeRTOS/source/tasks.c:4232:12:xTaskGetTickCountFromISR	16	static
 ../FreeRTOS/source/tasks.c:4267:13:uxTaskGetNumberOfTasks	4	static
 ../FreeRTOS/source/tasks.c:4279:8:pcTaskGetName	24	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:4438:16:xTaskGetStaticBuffers	32	static,ignoring_inline_asm
+../FreeRTOS/source/tasks.c:4665:10:vTaskStepTick	24	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:4707:12:xTaskCatchUpTicks	24	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:4831:12:xTaskIncrementTick	40	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:5215:10:vTaskSwitchContext	16	static,ignoring_inline_asm
@@ -39,7 +41,8 @@
 ../FreeRTOS/source/tasks.c:5681:6:vTaskInternalSetTimeOutState	16	static
 ../FreeRTOS/source/tasks.c:5693:12:xTaskCheckForTimeOut	32	static,ignoring_inline_asm
 ../FreeRTOS/source/tasks.c:5762:6:vTaskMissedYield	4	static
-../FreeRTOS/source/tasks.c:5908:8:prvIdleTask	16	static
+../FreeRTOS/source/tasks.c:5908:8:prvIdleTask	24	static,ignoring_inline_asm
+../FreeRTOS/source/tasks.c:6045:22:eTaskConfirmSleepModeStatus	16	static
 ../FreeRTOS/source/tasks.c:6175:13:prvInitialiseTaskLists	16	static
 ../FreeRTOS/source/tasks.c:6207:13:prvCheckTasksWaitingTermination	16	static
 ../FreeRTOS/source/tasks.c:6568:17:prvDeleteTCB	16	static,ignoring_inline_asm

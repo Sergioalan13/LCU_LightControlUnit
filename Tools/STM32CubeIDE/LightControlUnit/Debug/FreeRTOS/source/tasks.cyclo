@@ -21,12 +21,14 @@
 ../FreeRTOS/source/tasks.c:3742:6:vTaskStartScheduler	4
 ../FreeRTOS/source/tasks.c:3847:6:vTaskEndScheduler	2
 ../FreeRTOS/source/tasks.c:3890:6:vTaskSuspendAll	1
+../FreeRTOS/source/tasks.c:4002:23:prvGetExpectedIdleTime	5
 ../FreeRTOS/source/tasks.c:4064:12:xTaskResumeAll	14
 ../FreeRTOS/source/tasks.c:4213:12:xTaskGetTickCount	1
 ../FreeRTOS/source/tasks.c:4232:12:xTaskGetTickCountFromISR	1
 ../FreeRTOS/source/tasks.c:4267:13:uxTaskGetNumberOfTasks	1
 ../FreeRTOS/source/tasks.c:4279:8:pcTaskGetName	3
 ../FreeRTOS/source/tasks.c:4438:16:xTaskGetStaticBuffers	7
+../FreeRTOS/source/tasks.c:4665:10:vTaskStepTick	5
 ../FreeRTOS/source/tasks.c:4707:12:xTaskCatchUpTicks	2
 ../FreeRTOS/source/tasks.c:4831:12:xTaskIncrementTick	13
 ../FreeRTOS/source/tasks.c:5215:10:vTaskSwitchContext	5
@@ -39,7 +41,8 @@
 ../FreeRTOS/source/tasks.c:5681:6:vTaskInternalSetTimeOutState	1
 ../FreeRTOS/source/tasks.c:5693:12:xTaskCheckForTimeOut	7
 ../FreeRTOS/source/tasks.c:5762:6:vTaskMissedYield	1
-../FreeRTOS/source/tasks.c:5908:8:prvIdleTask	2
+../FreeRTOS/source/tasks.c:5908:8:prvIdleTask	5
+../FreeRTOS/source/tasks.c:6045:22:eTaskConfirmSleepModeStatus	5
 ../FreeRTOS/source/tasks.c:6175:13:prvInitialiseTaskLists	2
 ../FreeRTOS/source/tasks.c:6207:13:prvCheckTasksWaitingTermination	2
 ../FreeRTOS/source/tasks.c:6568:17:prvDeleteTCB	4
